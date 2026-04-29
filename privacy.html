@@ -1,9 +1,11 @@
-<!DOCTYPE html>
+
+# Create the updated Privacy Policy HTML
+privacy_html = """<!DOCTYPE html>
 <html lang="en" class="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - TikTok Ads Pro</title>
+    <title>Privacy Policy - SoftifyDZ</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -11,7 +13,7 @@
             theme: {
                 extend: {
                     colors: {
-                        tiktok: {
+                        brand: {
                             black: '#010101',
                             white: '#FFFFFF',
                             cyan: '#69C9D0',
@@ -35,14 +37,16 @@
 </head>
 <body class="antialiased">
     <!-- Simple Nav -->
-    <nav class="border-b border-tiktok-gray/50 bg-tiktok-black/80 backdrop-blur-md sticky top-0 z-50">
+    <nav class="border-b border-brand-gray/50 bg-brand-black/80 backdrop-blur-md sticky top-0 z-50">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16 items-center">
                 <a href="index.html" class="flex items-center gap-2">
-                    <div class="w-8 h-8 bg-gradient-to-br from-tiktok-pink to-tiktok-cyan rounded-lg flex items-center justify-center">
-                        <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.17-2.89-.6-4.13-1.47-.13 1.15-.14 2.3-.14 3.45 0 1.93-.35 3.85-1.14 5.61-.89 1.99-2.49 3.66-4.47 4.51-1.49.67-3.13.91-4.75.89-1.62-.02-3.25-.37-4.72-1.11-1.92-.96-3.47-2.63-4.23-4.62-.71-1.81-.88-3.8-.47-5.7.45-2.03 1.65-3.89 3.39-5.02 1.57-1.03 3.49-1.5 5.35-1.35.01 1.62.01 3.24.02 4.85-.95-.28-2.01-.12-2.85.41-.81.51-1.33 1.42-1.41 2.38-.1 1.17.36 2.34 1.25 3.1.85.73 2.01.99 3.1.7.94-.25 1.74-.94 2.1-1.85.35-.89.35-1.88.35-2.83V0z"/></svg>
+                    <div class="w-8 h-8 bg-gradient-to-br from-brand-pink to-brand-cyan rounded-lg flex items-center justify-center">
+                        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                        </svg>
                     </div>
-                    <span class="font-bold">TikTokAdsPro</span>
+                    <span class="font-bold">SoftifyDZ</span>
                 </a>
                 <a href="index.html" class="text-sm text-gray-400 hover:text-white transition">Back to Home</a>
             </div>
@@ -56,7 +60,7 @@
         </header>
 
         <div class="legal-content">
-            <p>At TikTok Ads Pro, we take your privacy seriously. This Privacy Policy explains how we collect, use, and protect your information when you use our platform.</p>
+            <p>At SoftifyDZ, we take your privacy seriously. This Privacy Policy explains how we collect, use, and protect your information when you use our platform.</p>
 
             <h2>1. Data We Collect</h2>
             <p>We collect information to provide better services to our users. This includes:</p>
@@ -108,12 +112,133 @@
             <p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new policy on this page.</p>
 
             <h2>10. Contact Information</h2>
-            <p>If you have any questions or concerns about our Privacy Policy, please contact us at privacy@tiktokadspro.com.</p>
+            <p>If you have any questions or concerns about our Privacy Policy, please contact us at privacy@softifydz.com.</p>
         </div>
     </main>
 
-    <footer class="border-t border-tiktok-gray/50 py-8 text-center text-sm text-gray-500">
-        &copy; 2026 TikTokAdsPro. All rights reserved.
+    <footer class="border-t border-brand-gray/50 py-8 text-center text-sm text-gray-500">
+        &copy; 2026 SoftifyDZ. All rights reserved.
     </footer>
 </body>
-</html>
+</html>"""
+
+# Create the updated Terms of Service HTML
+terms_html = """<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service - SoftifyDZ</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            black: '#010101',
+                            white: '#FFFFFF',
+                            cyan: '#69C9D0',
+                            pink: '#EE1D52',
+                            dark: '#121212',
+                            gray: '#2F2F2F'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { background-color: #010101; color: #FFFFFF; font-family: 'Inter', sans-serif; }
+        .legal-content h2 { font-size: 1.5rem; font-weight: 700; margin-top: 2.5rem; margin-bottom: 1rem; color: #EE1D52; }
+        .legal-content p { margin-bottom: 1.25rem; color: #D1D5DB; line-height: 1.75; }
+        .legal-content ul { margin-bottom: 1.25rem; list-style-type: disc; padding-left: 1.5rem; color: #D1D5DB; }
+        .legal-content li { margin-bottom: 0.5rem; }
+    </style>
+</head>
+<body class="antialiased">
+    <!-- Simple Nav -->
+    <nav class="border-b border-brand-gray/50 bg-brand-black/80 backdrop-blur-md sticky top-0 z-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <a href="index.html" class="flex items-center gap-2">
+                    <div class="w-8 h-8 bg-gradient-to-br from-brand-pink to-brand-cyan rounded-lg flex items-center justify-center">
+                        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                        </svg>
+                    </div>
+                    <span class="font-bold">SoftifyDZ</span>
+                </a>
+                <a href="index.html" class="text-sm text-gray-400 hover:text-white transition">Back to Home</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <header class="mb-12">
+            <h1 class="text-4xl font-extrabold mb-4">Terms of Service</h1>
+            <p class="text-gray-400">Last Updated: April 28, 2026</p>
+        </header>
+
+        <div class="legal-content">
+            <p>Welcome to SoftifyDZ. These Terms of Service ("Terms") govern your access to and use of our platform, which provides tools for managing and optimizing TikTok advertising campaigns.</p>
+
+            <h2>1. Acceptance of Terms</h2>
+            <p>By creating an account or using our services, you agree to be bound by these Terms and our Privacy Policy. If you do not agree to these terms, please do not use our platform.</p>
+
+            <h2>2. Description of Service</h2>
+            <p>SoftifyDZ provides a software-as-a-service (SaaS) platform that allows users to:</p>
+            <ul>
+                <li>Connect their TikTok Ads accounts via secure API.</li>
+                <li>View and analyze campaign performance data.</li>
+                <li>Set and execute automated optimization rules for advertising campaigns.</li>
+            </ul>
+
+            <h2>3. User Responsibilities</h2>
+            <p>As a user of our platform, you agree to:</p>
+            <ul>
+                <li>Comply with all TikTok advertising policies and community guidelines.</li>
+                <li>Not use the platform for any illegal, fraudulent, or unauthorized advertising activities.</li>
+                <li>Maintain the confidentiality of your account credentials.</li>
+                <li>Be solely responsible for the content of your advertisements and the results of your campaigns.</li>
+            </ul>
+
+            <h2>4. Account Access and Security</h2>
+            <p>We use secure OAuth protocols to access your TikTok Ads data. You grant us permission to access and modify your TikTok Ads account data as necessary to provide the services you have requested (e.g., pausing campaigns based on your rules).</p>
+
+            <h2>5. Data Usage Disclaimer</h2>
+            <p>Our platform acts as a management layer for your TikTok Ads. We do not own your TikTok accounts, and we only use the data retrieved via the TikTok API to provide our services to you. We are not responsible for any actions taken by TikTok regarding your account.</p>
+
+            <h2>6. Limitation of Liability</h2>
+            <p>SoftifyDZ provides tools to assist in campaign management, but we do not guarantee specific advertising results, ROAS, or performance outcomes. We are not liable for any financial losses incurred through your advertising spend on TikTok.</p>
+
+            <h2>7. Subscription and Payments</h2>
+            <p>Access to certain features requires a paid subscription. Fees are billed in advance on a monthly or annual basis and are non-refundable except as required by law.</p>
+
+            <h2>8. Termination</h2>
+            <p>We reserve the right to suspend or terminate your access to the platform at any time for violations of these Terms or for any other reason at our sole discretion.</p>
+
+            <h2>9. Changes to Terms</h2>
+            <p>We may update these Terms from time to time. We will notify you of any significant changes by posting the new Terms on this page and updating the "Last Updated" date.</p>
+
+            <h2>10. Contact Information</h2>
+            <p>If you have any questions about these Terms, please contact us at legal@softifydz.com.</p>
+        </div>
+    </main>
+
+    <footer class="border-t border-brand-gray/50 py-8 text-center text-sm text-gray-500">
+        &copy; 2026 SoftifyDZ. All rights reserved.
+    </footer>
+</body>
+</html>"""
+
+# Save both files
+with open('/mnt/agents/output/privacy-policy.html', 'w', encoding='utf-8') as f:
+    f.write(privacy_html)
+
+with open('/mnt/agents/output/terms-of-service.html', 'w', encoding='utf-8') as f:
+    f.write(terms_html)
+
+print("Files saved successfully.")
